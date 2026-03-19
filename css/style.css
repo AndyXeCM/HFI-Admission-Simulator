@@ -31,7 +31,7 @@ body {
     linear-gradient(135deg, rgba(255, 183, 0, 0.92) 0, rgba(255, 183, 0, 0.92) 56px, transparent 56px) top right/228px 228px no-repeat,
     linear-gradient(225deg, rgba(93, 167, 233, 0.82) 0, rgba(93, 167, 233, 0.82) 140px, transparent 140px) bottom left/340px 340px no-repeat,
     linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url('https://gdhfi.com/home/img/bg10.jpg') center center / cover no-repeat fixed;
+    url('/bg10.jpg') center center / cover no-repeat fixed;
 }
 
 .page-shell {
