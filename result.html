@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HFI 学生信息查询</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="result-body">
+  <main class="page-shell page-result">
+    <section class="result-panel">
+      <header class="result-header">
+        <div class="result-header-icon">⌕</div>
+        <div>学生信息查询</div>
+      </header>
+
+      <section class="result-info-grid">
+        <div class="result-info-item"><span>考生名字:</span><strong id="resultName"></strong></div>
+        <div class="result-info-item"><span>准考证号:</span><strong id="resultTicket"></strong></div>
+        <div class="result-info-item"><span>考试日期:</span><strong>2026年3月15日</strong></div>
+      </section>
+
+      <section class="score-grid">
+        <article class="score-item">
+          <div class="score-value" id="englishScore"></div>
+          <div class="score-label">英语</div>
+        </article>
+        <article class="score-item">
+          <div class="score-value" id="mathScore"></div>
+          <div class="score-label">数学</div>
+        </article>
+        <article class="score-item">
+          <div class="score-value" id="interviewShortlist"></div>
+          <div class="score-label">入围面试</div>
+        </article>
+        <article class="score-item">
+          <div class="score-value" id="interviewScore"></div>
+          <div class="score-label">面试成绩</div>
+        </article>
+      </section>
+
+      <section class="admission-strip">
+        <div class="admission-title">录取结果：<strong id="admissionResult"></strong></div>
+        <div class="admission-actions">
+          <a class="download-btn" href="assets/admission-letter.txt" download>⬇ 下载录取通知书</a>
+        </div>
+      </section>
+
+      <section class="result-note" id="noteText"></section>
+
+      <div class="result-actions">
+        <a class="ghost-btn" href="index.html">返回查询</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HFI 考试信息查询</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="login-body">
+  <main class="page-shell page-login">
+    <section class="login-card">
+      <img class="brand-logo" src="https://gdhfi.com/home/img/logo.png" alt="HFI logo" />
+      <h1 class="login-title">考试信息查询</h1>
+
+      <form class="query-form" id="queryForm">
+        <label class="pill-field">
+          <span class="field-label">考生姓名:</span>
+          <input id="studentName" type="text" autocomplete="off" />
+        </label>
+
+        <label class="pill-field">
+          <span class="field-label">准考证号:</span>
+          <input id="ticketNo" type="text" autocomplete="off" />
+        </label>
+
+        <label class="pill-field">
+          <span class="field-label">验证码:</span>
+          <input id="captchaInput" type="text" maxlength="4" autocomplete="off" />
+          <button class="captcha-box" id="captchaButton" type="button" aria-label="查看固定验证码">uhXu</button>
+        </label>
+
+        <button class="primary-btn query-btn" type="submit">查询</button>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
